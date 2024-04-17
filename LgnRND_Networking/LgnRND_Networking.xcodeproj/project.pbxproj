@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FCA80232BD015AB003A9DDD /* LgnRND_NetworkingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA80222BD015AB003A9DDD /* LgnRND_NetworkingApp.swift */; };
+		9FCA80272BD015AE003A9DDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCA80262BD015AE003A9DDD /* Assets.xcassets */; };
+		9FCA802A2BD015AE003A9DDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCA80292BD015AE003A9DDD /* Preview Assets.xcassets */; };
+		9FCA80342BD015AE003A9DDD /* LgnRND_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA80332BD015AE003A9DDD /* LgnRND_NetworkingTests.swift */; };
+		9FCA803E2BD015AE003A9DDD /* LgnRND_NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA803D2BD015AE003A9DDD /* LgnRND_NetworkingUITests.swift */; };
+		9FCA80402BD015AE003A9DDD /* LgnRND_NetworkingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA803F2BD015AE003A9DDD /* LgnRND_NetworkingUITestsLaunchTests.swift */; };
+		9FCA80512BD01682003A9DDD /* RequestComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA804E2BD01682003A9DDD /* RequestComponents.swift */; };
+		9FCA80522BD01682003A9DDD /* RequestMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA804F2BD01682003A9DDD /* RequestMethods.swift */; };
+		9FCA80532BD01682003A9DDD /* RequestErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA80502BD01682003A9DDD /* RequestErrors.swift */; };
+		9FCA80562BD01687003A9DDD /* RequestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA80542BD01687003A9DDD /* RequestClient.swift */; };
+		9FCA80572BD01687003A9DDD /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA80552BD01687003A9DDD /* APIClient.swift */; };
+		9FCA805A2BD016AD003A9DDD /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA80592BD016AD003A9DDD /* DummyData.swift */; };
+		9FCA805D2BD016BE003A9DDD /* RNDNetworkingSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA805B2BD016BE003A9DDD /* RNDNetworkingSUIApp.swift */; };
+		9FCA805E2BD016BE003A9DDD /* RootContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCA805C2BD016BE003A9DDD /* RootContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FCA80302BD015AE003A9DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FCA80172BD015AB003A9DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCA801E2BD015AB003A9DDD;
+			remoteInfo = LgnRND_Networking;
+		};
+		9FCA803A2BD015AE003A9DDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FCA80172BD015AB003A9DDD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FCA801E2BD015AB003A9DDD;
+			remoteInfo = LgnRND_Networking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FCA801F2BD015AB003A9DDD /* LgnRND_Networking_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LgnRND_Networking_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCA80222BD015AB003A9DDD /* LgnRND_NetworkingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LgnRND_NetworkingApp.swift; sourceTree = "<group>"; };
+		9FCA80262BD015AE003A9DDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FCA80292BD015AE003A9DDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FCA802F2BD015AE003A9DDD /* LgnRND_NetworkingTests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LgnRND_NetworkingTests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCA80332BD015AE003A9DDD /* LgnRND_NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LgnRND_NetworkingTests.swift; sourceTree = "<group>"; };
+		9FCA80392BD015AE003A9DDD /* LgnRND_NetworkingUITests_iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LgnRND_NetworkingUITests_iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FCA803D2BD015AE003A9DDD /* LgnRND_NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LgnRND_NetworkingUITests.swift; sourceTree = "<group>"; };
+		9FCA803F2BD015AE003A9DDD /* LgnRND_NetworkingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LgnRND_NetworkingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FCA804E2BD01682003A9DDD /* RequestComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestComponents.swift; sourceTree = "<group>"; };
+		9FCA804F2BD01682003A9DDD /* RequestMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMethods.swift; sourceTree = "<group>"; };
+		9FCA80502BD01682003A9DDD /* RequestErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestErrors.swift; sourceTree = "<group>"; };
+		9FCA80542BD01687003A9DDD /* RequestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestClient.swift; sourceTree = "<group>"; };
+		9FCA80552BD01687003A9DDD /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9FCA80592BD016AD003A9DDD /* DummyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		9FCA805B2BD016BE003A9DDD /* RNDNetworkingSUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNDNetworkingSUIApp.swift; sourceTree = "<group>"; };
+		9FCA805C2BD016BE003A9DDD /* RootContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FCA801C2BD015AB003A9DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCA802C2BD015AE003A9DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCA80362BD015AE003A9DDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FCA80162BD015AB003A9DDD = {
+			isa = PBXGroup;
+			children = (
+				9FCA80212BD015AB003A9DDD /* iOS */,
+				9FCA80322BD015AE003A9DDD /* iOSTests */,
+				9FCA803C2BD015AE003A9DDD /* iOSUITests */,
+				9FCA80202BD015AB003A9DDD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FCA80202BD015AB003A9DDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA801F2BD015AB003A9DDD /* LgnRND_Networking_iOS.app */,
+				9FCA802F2BD015AE003A9DDD /* LgnRND_NetworkingTests_iOS.xctest */,
+				9FCA80392BD015AE003A9DDD /* LgnRND_NetworkingUITests_iOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FCA80212BD015AB003A9DDD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA80582BD016A1003A9DDD /* DummyData */,
+				9FCA804C2BD0165C003A9DDD /* NetworkAPI */,
+				9FCA80222BD015AB003A9DDD /* LgnRND_NetworkingApp.swift */,
+				9FCA805B2BD016BE003A9DDD /* RNDNetworkingSUIApp.swift */,
+				9FCA805C2BD016BE003A9DDD /* RootContentView.swift */,
+				9FCA80262BD015AE003A9DDD /* Assets.xcassets */,
+				9FCA80282BD015AE003A9DDD /* Preview Content */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9FCA80282BD015AE003A9DDD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA80292BD015AE003A9DDD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FCA80322BD015AE003A9DDD /* iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA80332BD015AE003A9DDD /* LgnRND_NetworkingTests.swift */,
+			);
+			path = iOSTests;
+			sourceTree = "<group>";
+		};
+		9FCA803C2BD015AE003A9DDD /* iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA803D2BD015AE003A9DDD /* LgnRND_NetworkingUITests.swift */,
+				9FCA803F2BD015AE003A9DDD /* LgnRND_NetworkingUITestsLaunchTests.swift */,
+			);
+			path = iOSUITests;
+			sourceTree = "<group>";
+		};
+		9FCA804C2BD0165C003A9DDD /* NetworkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA80552BD01687003A9DDD /* APIClient.swift */,
+				9FCA80542BD01687003A9DDD /* RequestClient.swift */,
+				9FCA804D2BD0166C003A9DDD /* Basic */,
+			);
+			path = NetworkAPI;
+			sourceTree = "<group>";
+		};
+		9FCA804D2BD0166C003A9DDD /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA804E2BD01682003A9DDD /* RequestComponents.swift */,
+				9FCA80502BD01682003A9DDD /* RequestErrors.swift */,
+				9FCA804F2BD01682003A9DDD /* RequestMethods.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		9FCA80582BD016A1003A9DDD /* DummyData */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA80592BD016AD003A9DDD /* DummyData.swift */,
+			);
+			path = DummyData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FCA801E2BD015AB003A9DDD /* LgnRND_Networking_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCA80432BD015AE003A9DDD /* Build configuration list for PBXNativeTarget "LgnRND_Networking_iOS" */;
+			buildPhases = (
+				9FCA801B2BD015AB003A9DDD /* Sources */,
+				9FCA801C2BD015AB003A9DDD /* Frameworks */,
+				9FCA801D2BD015AB003A9DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LgnRND_Networking_iOS;
+			productName = LgnRND_Networking;
+			productReference = 9FCA801F2BD015AB003A9DDD /* LgnRND_Networking_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FCA802E2BD015AE003A9DDD /* LgnRND_NetworkingTests_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCA80462BD015AE003A9DDD /* Build configuration list for PBXNativeTarget "LgnRND_NetworkingTests_iOS" */;
+			buildPhases = (
+				9FCA802B2BD015AE003A9DDD /* Sources */,
+				9FCA802C2BD015AE003A9DDD /* Frameworks */,
+				9FCA802D2BD015AE003A9DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FCA80312BD015AE003A9DDD /* PBXTargetDependency */,
+			);
+			name = LgnRND_NetworkingTests_iOS;
+			productName = LgnRND_NetworkingTests;
+			productReference = 9FCA802F2BD015AE003A9DDD /* LgnRND_NetworkingTests_iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FCA80382BD015AE003A9DDD /* LgnRND_NetworkingUITests_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FCA80492BD015AE003A9DDD /* Build configuration list for PBXNativeTarget "LgnRND_NetworkingUITests_iOS" */;
+			buildPhases = (
+				9FCA80352BD015AE003A9DDD /* Sources */,
+				9FCA80362BD015AE003A9DDD /* Frameworks */,
+				9FCA80372BD015AE003A9DDD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FCA803B2BD015AE003A9DDD /* PBXTargetDependency */,
+			);
+			name = LgnRND_NetworkingUITests_iOS;
+			productName = LgnRND_NetworkingUITests;
+			productReference = 9FCA80392BD015AE003A9DDD /* LgnRND_NetworkingUITests_iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FCA80172BD015AB003A9DDD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					9FCA801E2BD015AB003A9DDD = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					9FCA802E2BD015AE003A9DDD = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9FCA801E2BD015AB003A9DDD;
+					};
+					9FCA80382BD015AE003A9DDD = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9FCA801E2BD015AB003A9DDD;
+					};
+				};
+			};
+			buildConfigurationList = 9FCA801A2BD015AB003A9DDD /* Build configuration list for PBXProject "LgnRND_Networking" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FCA80162BD015AB003A9DDD;
+			productRefGroup = 9FCA80202BD015AB003A9DDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FCA801E2BD015AB003A9DDD /* LgnRND_Networking_iOS */,
+				9FCA802E2BD015AE003A9DDD /* LgnRND_NetworkingTests_iOS */,
+				9FCA80382BD015AE003A9DDD /* LgnRND_NetworkingUITests_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FCA801D2BD015AB003A9DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCA802A2BD015AE003A9DDD /* Preview Assets.xcassets in Resources */,
+				9FCA80272BD015AE003A9DDD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCA802D2BD015AE003A9DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCA80372BD015AE003A9DDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FCA801B2BD015AB003A9DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCA805A2BD016AD003A9DDD /* DummyData.swift in Sources */,
+				9FCA80522BD01682003A9DDD /* RequestMethods.swift in Sources */,
+				9FCA80572BD01687003A9DDD /* APIClient.swift in Sources */,
+				9FCA80532BD01682003A9DDD /* RequestErrors.swift in Sources */,
+				9FCA805E2BD016BE003A9DDD /* RootContentView.swift in Sources */,
+				9FCA80562BD01687003A9DDD /* RequestClient.swift in Sources */,
+				9FCA805D2BD016BE003A9DDD /* RNDNetworkingSUIApp.swift in Sources */,
+				9FCA80512BD01682003A9DDD /* RequestComponents.swift in Sources */,
+				9FCA80232BD015AB003A9DDD /* LgnRND_NetworkingApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCA802B2BD015AE003A9DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCA80342BD015AE003A9DDD /* LgnRND_NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FCA80352BD015AE003A9DDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCA803E2BD015AE003A9DDD /* LgnRND_NetworkingUITests.swift in Sources */,
+				9FCA80402BD015AE003A9DDD /* LgnRND_NetworkingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FCA80312BD015AE003A9DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FCA801E2BD015AB003A9DDD /* LgnRND_Networking_iOS */;
+			targetProxy = 9FCA80302BD015AE003A9DDD /* PBXContainerItemProxy */;
+		};
+		9FCA803B2BD015AE003A9DDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FCA801E2BD015AB003A9DDD /* LgnRND_Networking_iOS */;
+			targetProxy = 9FCA803A2BD015AE003A9DDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9FCA80412BD015AE003A9DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FCA80422BD015AE003A9DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FCA80442BD015AE003A9DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = UE8YWDNEAR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "local.LgnRND-Networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FCA80452BD015AE003A9DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = UE8YWDNEAR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "local.LgnRND-Networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FCA80472BD015AE003A9DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UE8YWDNEAR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "local.LgnRND-NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LgnRND_Networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LgnRND_Networking";
+			};
+			name = Debug;
+		};
+		9FCA80482BD015AE003A9DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UE8YWDNEAR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "local.LgnRND-NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LgnRND_Networking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LgnRND_Networking";
+			};
+			name = Release;
+		};
+		9FCA804A2BD015AE003A9DDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UE8YWDNEAR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "local.LgnRND-NetworkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LgnRND_Networking;
+			};
+			name = Debug;
+		};
+		9FCA804B2BD015AE003A9DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UE8YWDNEAR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "local.LgnRND-NetworkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LgnRND_Networking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FCA801A2BD015AB003A9DDD /* Build configuration list for PBXProject "LgnRND_Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCA80412BD015AE003A9DDD /* Debug */,
+				9FCA80422BD015AE003A9DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCA80432BD015AE003A9DDD /* Build configuration list for PBXNativeTarget "LgnRND_Networking_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCA80442BD015AE003A9DDD /* Debug */,
+				9FCA80452BD015AE003A9DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCA80462BD015AE003A9DDD /* Build configuration list for PBXNativeTarget "LgnRND_NetworkingTests_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCA80472BD015AE003A9DDD /* Debug */,
+				9FCA80482BD015AE003A9DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FCA80492BD015AE003A9DDD /* Build configuration list for PBXNativeTarget "LgnRND_NetworkingUITests_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FCA804A2BD015AE003A9DDD /* Debug */,
+				9FCA804B2BD015AE003A9DDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FCA80172BD015AB003A9DDD /* Project object */;
+}
